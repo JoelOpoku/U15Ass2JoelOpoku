@@ -1,0 +1,119 @@
+
+<link rel="stylesheet" href="../CSS/style.css">
+
+<!-- HEADER -->
+<header class="header">
+        <h1>Whisker’s Café</h1>
+
+
+    <nav>
+        <a href="Homepage.html">Home</a>
+        <a href="CatProfiles.html">Cat Profiles</a>
+        <a href="BookAVisit.html">Book a Visit</a>
+        <a href="MenuAndPricing.html">Menu & Pricing</a>
+        <a href="AnimalCareRules.html">Animal Care Rules</a>
+        <a href="AboutUs.html">About Us</a>
+    </nav>
+</header>
+
+
+<section class="rules-intro">
+    <h2>Caring for our feline friends</h2>
+    <p>
+        At Whisker's Café, we are dedicated to providing a safe, happy, and loving environment for all our cats and visitors. Our animal care rules are thoughtfully designed to ensure everyone has a wonderful experience. Please take a moment to familiarise yourself with these guidelines, which help us maintain a harmonious space for our beloved feline residents.
+    </p>
+</section>
+
+<section class="rules-header">
+    <h2>Important guidelines for a purr-fect visit</h2>
+    <p>
+        Our commitment to the well-being of our cats and the comfort of our guests is paramount. These guidelines are in place to protect our furry friends, ensure they receive proper care, and allow all visitors to enjoy a peaceful and safe environment. Your cooperation helps us maintain the high standards of care and love that define Whisker's Café.
+    </p>
+</section>
+
+<section class="rules-container">
+
+    <div class="rules-wrapper">
+
+        <!-- LEFT COLUMN -->
+        <div class="rules-column">
+
+            <div class="rule">
+                <h3>How should I interact with the cats?</h3>
+                <p>Please approach our cats gently and allow them to come to you. Avoid picking them up unless they initiate contact and seem comfortable. Always supervise children when they are interacting with the cats.</p>
+                <span class="arrow">▼</span>
+            </div>
+
+            <div class="rule">
+                <h3>Can I feed the cats during my visit?</h3>
+                <p>To ensure the health and safety of our cats, please do not feed them any outside food or drinks. We provide specific cat-friendly treats, which can be purchased at the counter, if you wish to offer them a snack.</p>
+                <span class="arrow">▼</span>
+            </div>
+
+            <div class="rule">
+                <h3>What if I want to adopt a cat?</h3>
+                <p>We are thrilled you are considering adoption! Our cats are often looking for their forever homes. Please speak to a member of our staff who can provide information on our adoption process and the wonderful organisations we partner with.</p>
+                <span class="arrow">▼</span>
+            </div>
+
+            <div class="rule">
+                <h3>Are there any areas where cats are not allowed?</h3>
+                <p>For hygiene and safety reasons, cats are not permitted in the kitchen or food preparation areas. Please respect these boundaries to help us maintain a clean and safe environment for everyone.</p>
+                <span class="arrow">▼</span>
+            </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN (YOU WERE MISSING THIS) -->
+        <div class="rules-column">
+
+            <div class="rule">
+                <h3>What if a cat is sleeping?</h3>
+                <p>Our cats love their naps! Please respect their rest and avoid disturbing sleeping cats. A well-rested cat is a happy cat.</p>
+                <span class="arrow">▼</span>
+            </div>
+
+            <div class="rule">
+                <h3>Should I use flash photography?</h3>
+                <p>We kindly ask that you refrain from using flash photography, as it can be startling and disruptive to our cats. Non-flash photography is welcome.</p>
+                <span class="arrow">▼</span>
+            </div>
+
+            <div class="rule">
+                <h3>What should I do if a cat scratches or bites me?</h3>
+                <p>While our cats are friendly, occasional nips or scratches can happen. If this occurs, please inform a staff member immediately so we can provide first aid and ensure both your and the cat's well-being.</p>
+                <span class="arrow">▼</span>
+            </div>
+
+            <div class="rule">
+                <h3>Are there age restrictions for visitors?</h3>
+                <p>Children under the age of 10 must be accompanied by an adult at all times. This ensures their safety and helps us maintain a calm atmosphere for our cats.</p>
+                <span class="arrow">▼</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="rules-bottom">
+    <h2>Ensuring a joyful visit for everyone</h2>
+    <p>
+        These guidelines are vital for creating a happy and healthy environment for our cherished cats and ensuring a pleasant experience for all our guests. Your understanding and adherence to these rules help us continue our mission of providing a loving home and a wonderful café experience. Thank you for being a part of the Whisker's Café family!
+    </p>
+    <a href="BookAVisit.html" class="btn light-btn">Book your visit now</a>
+</section>
+
+
+<script>
+    const links = document.querySelectorAll("nav a");
+    const currentPage = window.location.pathname.split("/").pop();
+
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+</script>
