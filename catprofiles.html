@@ -1,0 +1,85 @@
+
+
+
+
+
+<!-- HEADER -->
+<header class="header">
+        <h1>Whisker’s Café</h1>
+
+    <nav>
+        <a href="Homepage.html">Home</a>
+        <a href="CatProfiles.html">Cat Profiles</a>
+        <a href="BookAVisit.html">Book a Visit</a>
+        <a href="MenuAndPricing.html">Menu & Pricing</a>
+        <a href="AnimalCareRules.html">Animal Care Rules</a>
+        <a href="AboutUs.html">About Us</a>
+    </nav>
+</header>
+
+
+
+
+
+
+<!-- INTRO -->
+<section class="intro">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <h2>Meet our beloved felines</h2>
+    <p>
+   Discover the unique personalities of the cats at Whisker's Café. Each one is special and waiting to steal your heart. Learn more about their quirks, what they love, and how you can meet them.
+    </p>
+</section>
+
+
+
+<!-- CAT 1 -->
+<section class="cat-row">
+    <img src="../Assets/JasperCatAsset1.jpg" alt="Jasper">
+
+    <div class="cat-text">
+        <h3>Jasper: the playful explorer</h3>
+        <p>
+            Meet Jasper, a charming two-year-old British Shorthair. He's known for his curious nature and loves to explore every nook and cranny of the café. Jasper enjoys chasing feather wands and napping in sunbeams. He's very affectionate once he gets to know you and enjoys gentle strokes behind the ears. Jasper is currently available for adoption.
+        </p>
+        <a href="BookAVisit.html" class="btn">Book a visit to meet Jasper</a>
+    </div>
+</section>
+
+<!-- CAT 2 (REVERSED) -->
+<section class="cat-row reverse">
+    
+    <div class="cat-text">
+        <h3>Luna: the serene observer</h3>
+        <p>
+      Luna is a graceful three-year-old Domestic Shorthair. She prefers quiet corners and observing the café's hustle and bustle from a comfortable perch. Luna enjoys gentle petting and purrs softly when content. She has a calm demeanour and would thrive in a peaceful home. Luna is available for adoption.
+        </p>
+        <a href="BookAVisit.html" class="btn">Book a visit to meet Luna</a>
+    </div>
+
+    <img src="../Assets/LunaCatAsset2.jpg" alt="Luna">
+</section>
+
+<!-- CAT 3 -->
+<section class="cat-row">
+    <img src="../Assets/WillowCatAsset3.jpg" alt="Willow">
+
+    <div class="cat-text">
+        <h3>Willow: the gentle cuddler</h3>
+        <p>
+            Willow is a delightful one-year-old Persian mix, known for her incredibly soft fur and sweet disposition. She adores being petted and will happily curl up on your lap for a long cuddle session. Willow enjoys playing with soft toys and needs regular grooming to keep her coat beautiful. Willow is available for adoption.
+        </p>
+        <a href="BookAVisit.html" class="btn">Book a visit to meet Willow</a>
+    </div>
+</section>
+
+<script>
+    const links = document.querySelectorAll("nav a");
+    const currentPage = window.location.pathname.split("/").pop();
+
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+</script>
